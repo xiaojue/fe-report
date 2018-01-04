@@ -2,11 +2,11 @@
   "name": "fe-report",
   "version": "0.1.0",
   "description": "report message for fe monitoring",
+	"main":"./dist/static/js/index.min.js",
   "private": true,
   "scripts": {
     "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
-    "build": "node ./node_modules/webpack-marauder/build/build.js",
-    "dll": "node ./node_modules/webpack-marauder/build/dll.js"
+    "build": "node ./node_modules/webpack-marauder/build/build4comp.js"
   },
   "dependencies": {},
   "devDependencies": {
