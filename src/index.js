@@ -50,7 +50,7 @@ class Report extends Events{
     return this.queue[type];
   }
   report(cb) {
-    Promise.all([this.getRequest(cb), this.postRequest(cb)]).then((urls)=>{
+    Promise.all([this.getRequest(), this.postRequest()]).then((urls)=>{
       this.trigger('afterReport');
       cb && cb.call(this, urls);
     });
