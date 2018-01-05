@@ -16,7 +16,7 @@ const rep = new Report({
 rep.on('afterReport', function () {
   console.log('afterReport');
 });
-rep.post('/post/jserr', {
+rep.reportByPost('/post/jserr', {
   msg: '1111'
 }, function (data) {
   console.log(data);

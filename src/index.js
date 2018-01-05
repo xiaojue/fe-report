@@ -21,10 +21,10 @@ class Report extends Events{
     this.getUrl = this.config.url + this.config.getPath;
     this.postUrl = this.config.url + this.config.postPath;
   }
-  get(data){
+  reportByGet(data){
     this.sendData('get', data);
   }
-  post(data){
+  reportByPost(data){
     this.sendData('post', data);
   }
   sendData(type, data){
