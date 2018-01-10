@@ -1,6 +1,6 @@
 {
   "name": "fe-report",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "report message for fe monitoring",
   "main": "./lib/index.min.js",
   "scripts": {
