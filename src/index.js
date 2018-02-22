@@ -21,15 +21,15 @@ class Report extends Events{
     this.getUrl = this.config.url + this.config.getPath;
     this.postUrl = this.config.url + this.config.postPath;
   }
-  reportByGet(data){
-    this.sendData('get', data);
+  reportByGet(data, cb){
+    this.sendData('get', data, cb);
   }
-  reportByPost(data){
-    this.sendData('post', data);
+  reportByPost(data, cb){
+    this.sendData('post', data, cb);
   }
-  sendData(type, data){
+  sendData(type, data, cb){
     if(this.catchData(type, data)) {
-      this.delayReport();
+      this.delayReport(cb);
     }
   }
   delayReport(cb){
